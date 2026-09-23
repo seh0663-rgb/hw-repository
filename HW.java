@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class HW {
     public static void main(String[] args) {
         
@@ -35,4 +37,15 @@ public class HW {
         }
         return arr2;
     }
+}
+
+public static int[] createRandomArray(int size) {
+    Random random = new Random();
+    int[] array = new int[size];
+
+    for (int i = 0; i < size; i++) {
+        array[i] = random.nextInt(101); // 0–100 inclusive
+    }
+
+    return array;
 }
