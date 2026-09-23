@@ -26,7 +26,13 @@ public class HW {
         int sum = 0;
         for(int i = 0; i < arr.length; i++){
             sum += arr[i];
-            
         }
+        int average = sum / arr.length;
+
+        int[] arr2 = new int[arr.length];
+        for(int i = 0; i< arr2.length; i++){
+            arr2[i] = arr[i] - average;
+        }
+        return arr2;
     }
 }
